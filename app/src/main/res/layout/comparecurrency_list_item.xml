@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark">
+
+    <TextView
+        android:id="@+id/crypto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textSize="35dp"
+        tools:text="BTC"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/crypto"
+        android:src="@drawable/ic_play"
+        android:id="@+id/imageView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/imageView"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/currencyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            tools:text="32015.21" />
+
+        <TextView
+            android:id="@+id/currencyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Nigerian Naira"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
